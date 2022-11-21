@@ -41,9 +41,14 @@ let container = document.getElementById("container");
 
 // console.log(teamMembers);
 for(let i=0; i < teamMembers.length; i++){
-    let teamiesimo = teamMembers[i];
-   document.getElementById("name").innerHTML += teamiesimo.name;
-   console.log(teamiesimo.name);
-   
-   
+    let teamIesimo = teamMembers[i];
+    teamIesimo.name = createBox("div","box");
+    // console.log(teamIesimo.name);
+   for(let key in teamIesimo){
+    console.log(key,teamIesimo[key]);
+    container.append(teamIesimo[key]) 
+        
+    
+    
+   }
 }

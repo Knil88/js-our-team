@@ -56,3 +56,11 @@ function returnElement (elemento) {
     let element =  document.getElementById(elemento)
     return element;
   }
+  function createBox(){
+    const divElement = document.createElement("div");
+    divElement.classList.add("box");
+   
+
+
+    return divElement;
+}

@@ -6,10 +6,46 @@
 }
 body{
     font-family: sans-serif;
+    background-color: slateblue;
 }
-#container{
-    display: block;
+#title-container{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    color: yellow;
+    margin-top: 10px;
 }
+h1{
+    margin-bottom: 20px;
+}
+p{
+    color: aliceblue;
+}
+#container {
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    background-color: chartreuse;
+    border-radius: 10px;
+    margin: 55px auto;
+    padding: 55px 0px;
+  }
+.box {
+    margin: 10px 20px;
+    border: 1px solid darkgreen;
+      border-right-color: darkgreen;
+      border-right-style: solid;
+      border-right-width: 1px;
+      border-left-color: darkgreen;
+      border-left-style: solid;
+      border-left-width: 1px;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    background-color: slateblue;
+    color: aliceblue;
+    border-radius:10px;
+  }
 .name{
 
 }

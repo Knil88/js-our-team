@@ -42,13 +42,16 @@ let container = document.getElementById("container");
 // console.log(teamMembers);
 for(let i=0; i < teamMembers.length; i++){
     let teamIesimo = teamMembers[i];
-    teamIesimo.name = createBox("div","box");
-    // console.log(teamIesimo.name);
-   for(let key in teamIesimo){
-    console.log(key,teamIesimo[key]);
-    container.append(teamIesimo[key]) 
+    let container = document.getElementById("container");
+    let element = document.createElement("div");
+    element.classList.add("box");
+    element.innerHTML = `Name:${teamIesimo.name}   Surname:${teamIesimo.surname}   Role:${teamIesimo.role}    Photo:${teamIesimo.photo}`;
+    container.append(element);
+
+    // for(let key in teamIesimo)
+   
         
     
     
-   }
+   
 }

@@ -37,21 +37,55 @@ const teamMembers = [
         "photo":"img\barbara-ramos-graphic-designer.jpg"
     },
 ]
-let container = document.getElementById("container");
+// let container = document.getElementById("container");
 
 // console.log(teamMembers);
-for(let i=0; i < teamMembers.length; i++){
-    let teamIesimo = teamMembers[i];
-    let container = document.getElementById("container");
-    let element = document.createElement("div");
-    element.classList.add("box");
-    element.innerHTML = `Name:${teamIesimo.name}   Surname:${teamIesimo.surname}   Role:${teamIesimo.role}    Photo:${teamIesimo.photo}`;
-    container.append(element);
+// for(let i=0; i < teamMembers.length; i++){
+//     let teamIesimo = teamMembers[i];
+//     let container = document.getElementById("container");
+//     let element = document.createElement("div");
+//     let bottomCards = document.querySelector(".bottom-cards");
+//     // element.classList.add("box");
+//     element.innerHTML = `Name:${teamIesimo.name}   Surname:${teamIesimo.surname}   Role:${teamIesimo.role}    Photo:${teamIesimo.photo}`;
+   
+    
+//     // container.append(element);
 
-    // for(let key in teamIesimo)
    
-        
-    
     
    
+// }
+const ctnCardMembro = document.querySelector("section.row");
+
+// creo il ciclo for con cui inserire le informazioni degli oggetti
+for (let k = 0; k < teamMembers.length; k++) {
+    
+    let membroDom = teamMembers[k];
+
+    let ctnInfoMembro = createElement("div", "slot");
+
+    let fotoMember = createElement("img", "img_member");
+    fotoMember.src = membroDom.foto;
+    ctnInfoMembro.append(fotoMember);
+
+    let nameMember = createElement("div", "name_member");
+    nameMember.innerHTML = membroDom.nome;
+    ctnInfoMembro.append(nameMember);
+
+    let roleMember = createElement("div", "role_member");
+    roleMember.innerHTML = membroDom.ruolo;
+    ctnInfoMembro.append(roleMember);
+
+    ctnCardMembro.append(ctnInfoMembro);
 }
+
+// FUNZIONI
+// Creo la funzione per generare vari elementi con classi o id
+function createElement (typeElement, idClassElement) {
+    // creo l'elemento
+    const element = document.createElement(typeElement);
+    element.classList.add(idClassElement);
+
+    // ritorno l'elemento
+    return element;
+} 

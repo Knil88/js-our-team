@@ -6,13 +6,13 @@
 }
 
 body {
-  background-color: #497174;
+  background-color: #1c7c83;
 }
 
 /* main rules */
 .container {
-  background-color: #EB6440;
-  color: #D6E4E5;
+  background-color: #dfd0cb;
+  color: #016c74;
   width: 80%;
   max-width: 1440px;
   border-radius: 30px;
@@ -22,7 +22,7 @@ body {
 }
 
 .container > h1 {
-  color: #497174;
+  color: #0f585e;
 }
 
 .container > p {
@@ -39,7 +39,7 @@ body {
 .slot {
   width: calc((100% - 50px) / 3 );
   padding: 10px;
-  background-color: #497174;
+  background-color: #ee0000;
   border-radius: 30px;
   text-align: center;
 }

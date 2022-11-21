@@ -54,7 +54,7 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe */
 
 // for (let k = 0; k < teamMembers.length; k++){
 
-//     let membroDom = membriTeam[k];
+//     let membroDom = teamMembers[k];
 //     let ctnInfoMembro = createElement("div", "ctn_info_membro");
 //     ctnInfoMembro.innerHTML = `Nome: ${membroDom.nome}, Ruolo: ${membroDom.ruolo}, Foto: ${membroDom.foto}.`;
 //     ctnCardMembro.appendChild(ctnInfoMembro);
@@ -65,9 +65,9 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe */
 const ctnCardMembro = document.querySelector("section.row");
 
 // creo il ciclo for con cui inserire le informazioni degli oggetti
-for (let k = 0; k < membriTeam.length; k++) {
+for (let k = 0; k < teamMembers.length; k++) {
     
-    let membroDom = membriTeam[k];
+    let membroDom = teamMembers[k];
 
     let ctnInfoMembro = createElement("div", "slot");
 
